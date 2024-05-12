@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Axit</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__container flex">
+					<div class="logo flex logo__header">
+						<a class="logo__ax">
+							<img src="./img/header/1.svg" alt="Axit" />
+						</a>
+						<a class="logo__it">
+							<img src="./img/header/2.svg" alt="Axit" />
+						</a>
+					</div>
+					<nav class="nav" title="main navigation">
+						<a class="nav-link active" href="index.html#features">Features</a>
+						<a class="nav-link" href="index.html#about">About</a>
+						<a class="nav-link" href="index.html#pricing">Pricing</a>
+						<a class="nav-link" href="index.html#reviews">Reviews</a>
+						<a class="nav-link" href="index.html#contact">Contact</a>
+					</nav>
+
+					<button class="mobile-nav-btn">
+						<div class="nav-icon"></div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li><a class="nav-link" href="index.html">Features</a></li>
+				<li><a class="nav-link" href="#!">About</a></li>
+				<li><a class="nav-link" href="#!">Pricing</a></li>
+				<li><a class="nav-link" href="#!">Reviews</a></li>
+				<li><a class="nav-link" href="#!">Contact</a></li>
+			</ul>
+		</div>
+
+		<main>
+			<section class="hero">
+				<div class="container">
+					<div class="hero__wrapper grid">
+						<div class="hero__text" data-aos="fade-right">
+							<div class="hero__logo">
+								<div class="logo flex">
+									<a class="logo__ax">
+										<img src="./img/hero/ax.svg" alt="Axit" />
+									</a>
+									<a class="logo__it">
+										<img src="./img/hero/it.svg" alt="Axit" />
+									</a>
+								</div>
+							</div>
+							<h1 class="hero__text-title" id="features">
+								MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+							</h1>
+
+							<p class="hero__text-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							</p>
+							<button class="btn">Download</button>
+						</div>
+						<div class="hero__form" data-aos="fade-left">
+							<div class="request-form">
+								<div class="request-form__header">
+									<h3 class="request-form__title">Try Your <span>FREE</span> Trial Today</h3>
+								</div>
+
+								<div class="request-form__content">
+									<form action="/" class="form" method="post">
+										<div class="form__group">
+											<input class="input input--name" type="text" placeholder="Name" />
+										</div>
+										<div class="form__group">
+											<input class="input input--email" type="text" placeholder="Email" />
+										</div>
+										<div class="form__group">
+											<input class="input input--password" type="text" placeholder="Password" />
+										</div>
+									</form>
+								</div>
+								<button class="btn btn-form">Get Started</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="social">
+				<div class="container social-container">
+					<div class="social__content">
+						<h1 class="social__title">Social Media</h1>
+						<p class="social__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+						</p>
+					</div>
+					<div class="social__icons flex">
+						<a href="#!" class="social__icon">
+							<svg width="70" height="70" viewBox="0 0 70 70" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M26.827 62.7083H38.4937V39.3458H49.0054L50.1604 27.7375H38.4937V21.875C38.4937 21.1014 38.801 20.3595 39.348 19.8126C39.895 19.2656 40.6368 18.9583 41.4104 18.9583H50.1604V7.29163H41.4104C37.5426 7.29163 33.8333 8.82808 31.0984 11.563C28.3635 14.2979 26.827 18.0072 26.827 21.875V27.7375H20.9937L19.8387 39.3458H26.827V62.7083Z"
+								/>
+							</svg>
+						</a>
+						<a href="#!" class="social__icon">
+							<svg width="59" height="48" viewBox="0 0 59 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M52.2629 12.3247C52.3008 12.8351 52.3008 13.3426 52.3008 13.8501C52.3008 29.3813 40.4796 47.278 18.8758 47.278C12.22 47.278 6.03666 45.3501 0.833328 42.0018C1.77833 42.1097 2.68833 42.1476 3.67124 42.1476C8.95914 42.1604 14.0973 40.3922 18.2575 37.128C15.8058 37.0836 13.4292 36.2748 11.4594 34.8143C9.4897 33.3539 8.0252 31.3148 7.27041 28.9818C7.99666 29.0897 8.72583 29.1626 9.48999 29.1626C10.5429 29.1626 11.6017 29.0168 12.5846 28.763C9.92388 28.2258 7.53138 26.7836 5.81388 24.6817C4.09639 22.5797 3.15993 19.9478 3.16374 17.2334V17.0876C4.72999 17.9597 6.54708 18.5051 8.47208 18.578C6.85942 17.5064 5.53709 16.0522 4.62307 14.3453C3.70904 12.6384 3.23174 10.7317 3.23374 8.7955C3.23374 6.61384 3.81416 4.613 4.83208 2.86884C7.78415 6.50014 11.466 9.47089 15.6393 11.5887C19.8126 13.7065 24.3841 14.924 29.0579 15.1626C28.8771 14.2876 28.7662 13.3805 28.7662 12.4705C28.7655 10.9275 29.0688 9.39942 29.659 7.9737C30.2491 6.54798 31.1145 5.25255 32.2055 4.16147C33.2966 3.07038 34.5921 2.20503 36.0178 1.6149C37.4435 1.02476 38.9715 0.721403 40.5146 0.722169C43.8979 0.722169 46.9517 2.13967 49.0983 4.43217C51.7285 3.92355 54.2507 2.9634 56.5533 1.59425C55.6766 4.30913 53.8401 6.61122 51.3879 8.06925C53.7206 7.80319 56.0004 7.18974 58.1517 6.24925C56.545 8.59162 54.554 10.6457 52.2629 12.3247Z"
+								/>
+							</svg>
+						</a>
+						<a href="#!" class="social__icon">
+							<svg width="54" height="54" viewBox="0 0 54 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M50.3333 0.75H3.66667C2.89312 0.75 2.15125 1.05729 1.60427 1.60427C1.05729 2.15125 0.75 2.89312 0.75 3.66667V50.3333C0.75 51.1069 1.05729 51.8488 1.60427 52.3957C2.15125 52.9427 2.89312 53.25 3.66667 53.25H50.3333C51.1069 53.25 51.8488 52.9427 52.3957 52.3957C52.9427 51.8488 53.25 51.1069 53.25 50.3333V3.66667C53.25 2.89312 52.9427 2.15125 52.3957 1.60427C51.8488 1.05729 51.1069 0.75 50.3333 0.75ZM16.3221 45.4829H8.52875V20.4287H16.3221V45.4829ZM12.4254 17.0075C11.228 17.0075 10.0796 16.5318 9.23283 15.6851C8.3861 14.8384 7.91042 13.69 7.91042 12.4925C7.91042 11.295 8.3861 10.1466 9.23283 9.29991C10.0796 8.45319 11.228 7.9775 12.4254 7.9775C13.6229 7.9775 14.7713 8.45319 15.618 9.29991C16.4647 10.1466 16.9404 11.295 16.9404 12.4925C16.9404 13.69 16.4647 14.8384 15.618 15.6851C14.7713 16.5318 13.6229 17.0075 12.4254 17.0075ZM45.4858 45.4829H37.7012V33.3C37.7012 30.395 37.6488 26.6588 33.6529 26.6588C29.5988 26.6588 28.9833 29.8263 28.9833 33.0958V45.4858H21.2046V20.4317H28.6713V23.8558H28.7792C29.8146 21.8871 32.3579 19.8104 36.1408 19.8104C44.0275 19.8104 45.4829 24.9963 45.4829 31.7454V45.4829H45.4858Z"
+								/>
+							</svg>
+						</a>
+						<a href="#!" class="social__icon">
+							<svg width="60" height="60" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M21.3667 57.8251C24.1667 58.6709 26.9958 59.1667 30 59.1667C37.7355 59.1667 45.1541 56.0938 50.624 50.624C56.0938 45.1542 59.1667 37.7355 59.1667 30C59.1667 26.1698 58.4123 22.3771 56.9465 18.8384C55.4807 15.2998 53.3323 12.0845 50.624 9.37609C47.9156 6.66772 44.7003 4.51932 41.1616 3.05355C37.6229 1.58779 33.8302 0.833374 30 0.833374C26.1698 0.833374 22.3771 1.58779 18.8384 3.05355C15.2997 4.51932 12.0844 6.66772 9.37605 9.37609C3.90624 14.8459 0.833334 22.2646 0.833334 30C0.833334 42.3959 8.62083 53.0417 19.6167 57.2417C19.3542 54.9667 19.0917 51.2042 19.6167 48.6084L22.9708 34.2C22.9708 34.2 22.125 32.5084 22.125 29.825C22.125 25.8 24.6333 22.7959 27.4917 22.7959C30 22.7959 31.1667 24.6334 31.1667 26.9959C31.1667 29.5042 29.5042 33.0917 28.6583 36.5334C28.1625 39.3917 30.175 41.9 33.0917 41.9C38.2833 41.9 42.3083 36.3584 42.3083 28.5417C42.3083 21.5417 37.2917 16.7584 30.0875 16.7584C21.8625 16.7584 17.0208 22.8834 17.0208 29.3292C17.0208 31.8375 17.8375 34.375 19.1792 36.0375C19.4417 36.2125 19.4417 36.4459 19.3542 36.8834L18.5083 40.0625C18.5083 40.5584 18.1875 40.7334 17.6917 40.3834C13.9583 38.75 11.8 33.4417 11.8 29.1542C11.8 19.9375 18.3333 11.5667 30.9333 11.5667C40.9667 11.5667 48.7833 18.7709 48.7833 28.3375C48.7833 38.3709 42.5708 46.4209 33.675 46.4209C30.8458 46.4209 28.075 44.9042 27.0833 43.125L25.1292 50.0375C24.4583 52.5459 22.6208 55.9 21.3667 57.9125V57.8251Z"
+								/>
+							</svg>
+						</a>
+						<a href="#!" class="social__icon">
+							<svg width="54" height="54" viewBox="0 0 54 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M53.0956 16.2228C53.0661 14.0138 52.6526 11.8267 51.8735 9.75946C51.1978 8.01574 50.1659 6.43212 48.8435 5.1098C47.5212 3.78748 45.9376 2.75552 44.1939 2.07988C42.1532 1.31383 39.9973 0.89962 37.8181 0.854875C35.0122 0.729458 34.1226 0.694458 27.0001 0.694458C19.8776 0.694458 18.9647 0.694458 16.1793 0.854875C14.001 0.899949 11.8462 1.31416 9.80639 2.07988C8.06239 2.75505 6.47853 3.78684 5.15615 5.10922C3.83377 6.4316 2.80198 8.01546 2.1268 9.75946C1.35923 11.7986 0.945912 13.9539 0.90472 16.1324C0.779303 18.9411 0.741386 19.8307 0.741386 26.9532C0.741386 34.0757 0.741386 34.9857 0.90472 37.774C0.94847 39.9557 1.35972 42.1082 2.1268 44.1528C2.80311 45.8963 3.83567 47.4795 5.15849 48.8013C6.48132 50.1231 8.06532 51.1545 9.8093 51.8295C11.8435 52.6263 13.9987 53.0701 16.1822 53.142C18.991 53.2674 19.8806 53.3053 27.0031 53.3053C34.1256 53.3053 35.0385 53.3053 37.8239 53.142C40.0031 53.099 42.1591 52.6858 44.1997 51.9199C45.943 51.2434 47.5262 50.2112 48.8484 48.889C50.1706 47.5668 51.2029 45.9836 51.8793 44.2403C52.6464 42.1986 53.0576 40.0461 53.1014 37.8615C53.2268 35.0557 53.2647 34.1661 53.2647 27.0407C53.2589 19.9182 53.2589 19.014 53.0956 16.2228ZM26.9826 40.4224C19.5335 40.4224 13.4989 34.3878 13.4989 26.9386C13.4989 19.4895 19.5335 13.4549 26.9826 13.4549C30.5588 13.4549 33.9884 14.8755 36.5171 17.4042C39.0458 19.9329 40.4664 23.3625 40.4664 26.9386C40.4664 30.5147 39.0458 33.9444 36.5171 36.4731C33.9884 39.0018 30.5588 40.4224 26.9826 40.4224ZM41.0031 16.1003C40.59 16.1007 40.181 16.0196 39.7994 15.8617C39.4177 15.7039 39.071 15.4723 38.7789 15.1802C38.4869 14.8882 38.2553 14.5414 38.0974 14.1598C37.9396 13.7782 37.8585 13.3691 37.8589 12.9561C37.8589 12.5434 37.9402 12.1348 38.0981 11.7535C38.256 11.3722 38.4875 11.0257 38.7794 10.7339C39.0712 10.4421 39.4176 10.2106 39.7989 10.0526C40.1802 9.89471 40.5889 9.81342 41.0016 9.81342C41.4143 9.81342 41.823 9.89471 42.2043 10.0526C42.5855 10.2106 42.932 10.4421 43.2238 10.7339C43.5157 11.0257 43.7471 11.3722 43.9051 11.7535C44.063 12.1348 44.1443 12.5434 44.1443 12.9561C44.1443 14.6945 42.7385 16.1003 41.0031 16.1003Z"
+								/>
+							</svg>
+						</a>
+						<a href="#!" class="social__icon">
+							<svg width="60" height="58" viewBox="0 0 60 58" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M30.0754 0.833374C14.0075 0.833374 0.984543 13.8563 0.984543 29.9242C0.984543 42.775 9.31746 53.6805 20.8791 57.5305C22.3345 57.793 22.8595 56.8975 22.8595 56.1275C22.8595 55.4363 22.8362 53.6046 22.8275 51.1809C14.7337 52.9367 13.0245 47.2784 13.0245 47.2784C11.7062 43.9184 9.79579 43.023 9.79579 43.023C7.15621 41.2175 9.99704 41.2584 9.99704 41.2584C12.9195 41.4625 14.4508 44.2567 14.4508 44.2567C17.0466 48.7017 21.2641 47.4184 22.915 46.6746C23.1804 44.7934 23.9387 43.51 24.767 42.7838C18.3095 42.0517 11.5195 39.555 11.5195 28.4046C11.5195 25.2342 12.6541 22.6325 14.5062 20.6025C14.2116 19.8646 13.2054 16.9042 14.795 12.9025C14.795 12.9025 17.2362 12.118 22.7925 15.8805C25.1654 15.2349 27.6132 14.9054 30.0725 14.9005C32.5317 14.9044 34.9797 15.234 37.3525 15.8805C42.9116 12.115 45.35 12.9025 45.35 12.9025C46.9395 16.9042 45.942 19.8646 45.6387 20.6025C47.5054 22.6325 48.6254 25.2313 48.6254 28.4046C48.6254 39.5842 41.8295 42.04 35.3487 42.7605C36.3841 43.6588 37.3175 45.4321 37.3175 48.1446C37.3175 52.0355 37.2825 55.1738 37.2825 56.1275C37.2825 56.9063 37.8016 57.8105 39.2862 57.5246C50.842 53.6688 59.1662 42.7721 59.1662 29.9242C59.1662 13.8563 46.1433 0.833374 30.0754 0.833374Z"
+								/>
+							</svg>
+						</a>
+						<a href="#!" class="social__icon">
+							<svg width="47" height="47" viewBox="0 0 47 47" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M7.02499 46.3334C10.5366 46.3334 13.3833 43.4866 13.3833 39.975C13.3833 36.4634 10.5366 33.6167 7.02499 33.6167C3.51338 33.6167 0.666656 36.4634 0.666656 39.975C0.666656 43.4866 3.51338 46.3334 7.02499 46.3334Z"
+								/>
+								<path
+									d="M0.666656 0.949829V9.204C21.1708 9.204 37.7958 25.829 37.7958 46.3332H46.05C46.05 21.279 25.7208 0.949829 0.666656 0.949829ZM0.666656 17.4582V25.7123C12.0417 25.7123 21.2875 34.9582 21.2875 46.3332H29.5417C29.5417 30.379 16.6208 17.4582 0.666656 17.4582Z"
+								/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<div class="box" data-aos="fade-up">
+				<div class="container">
+					<div class="tab__box">
+						<ul class="tab__box-list">
+							<li class="tab__btn active-tab" data-tab="tab-1">TAB1</li>
+							<li class="tab__btn" data-tab="tab-2">TAB2</li>
+							<li class="tab__btn" data-tab="tab-3">TAB3</li>
+						</ul>
+					</div>
+					<div class="box__wrapper grid">
+						<div class="content__box">
+							<div class="content hiden-tab-content" id="tab-1">
+								<h2>TAB1 with soft transitioning effect.</h2>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat vero autem enim, labore fugiat sunt non mollitia sit inventore minus
+									molestiae rem ipsum alias nulla facere libero totam&#160;ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat vero
+									autem enim, labore fugiat sunt non mollitia sit inventore minus molestiae rem ipsum alias nulla facere libero totam&#160;ut. Lorem ipsum dolor sit
+									amet consectetur adipisicing elit. Voluptatibus quaerat vero autem enim, labore fugiat sunt non mollitia sit inventore minus molestiae rem ipsum
+									alias nulla facere libero totam&#160;ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat vero autem enim, labore
+									fugiat sunt non mollitia sit inventore minus molestiae rem ipsum alias nulla facere libero totam&#160;ut. Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Voluptatibus quaerat vero autem enim, labore fugiat sunt non mollitia sit inventore minus molestiae rem ipsum alias nulla facere
+									libero totam&#160;ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat vero autem enim, labore fugiat sunt non
+									mollitia sit inventore minus molestiae rem ipsum alias nulla facere libero totam&#160;ut. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Voluptatibus quaerat vero autem enim, labore fugiat sunt non mollitia sit inventore minus molestiae rem ipsum alias nulla facere libero
+									totam&#160;ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat vero autem enim, labore fugiat sunt non mollitia sit
+									inventore minus molestiae rem ipsum alias nulla facere libero totam&#160;ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+									quaerat vero autem enim, labore fugiat sunt non mollitia sit inventore minus molestiae rem ipsum alias nulla facere libero totam&#160;ut. Lorem
+									ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat vero autem enim, labore fugiat sunt non mollitia sit inventore minus
+									molestiae rem ipsum alias nulla facere libero totam ut.
+								</p>
+							</div>
+
+							<div class="content hiden-tab-content" id="tab-2">
+								<h2>TAB2 with soft transitioning effect.</h2>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat vero autem enim, labore fugiat sunt non mollitia sit inventore minus
+									molestiae rem ipsum alias nulla facere libero totam&#160;ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat vero
+									autem enim, labore fugiat sunt non mollitia sit inventore minus molestiae rem ipsum alias nulla facere libero totam ut.
+								</p>
+							</div>
+
+							<div class="content hiden-tab-content" id="tab-3">
+								<h2>TAB3 with soft transitioning effect.</h2>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat vero autem enim, labore fugiat sunt non mollitia sit inventore minus
+									molestiae rem ipsum alias nulla facere libero totam&#160;ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat vero
+									autem enim, labore fugiat sunt non mollitia sit inventore minus molestiae rem ipsum alias nulla facere libero totam ut.
+								</p>
+							</div>
+							<button class="btn btn-box">Download</button>
+						</div>
+						<div class="img__box">
+							<picture>
+								<source srcset="./img/tabbox/1.webp 1x, ./img/tabbox/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/tabbox/1.jpg 1x, ./img/tabbox/1@2x.jpg 2x" type="image/jpeg" />
+								<img src="./img/tabbox/1.jpg" alt="sea" width="470" height="500" />
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="about">
+				<div class="container">
+					<h1 id="about" class="title" data-aos="flip-left">WHY THIS IS&#160;AWESOME</h1>
+					<p class="subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</p>
+
+					<div class="about__content">
+						<div class="about__card" data-aos="fade-up" data-aos-delay="100">
+							<img src="./img/about/1.svg" alt="lamp" class="about__card-img" />
+							<h3 class="about__card-title">Thoughtful Design</h3>
+							<p class="about__card-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et&#160;viverra.
+							</p>
+						</div>
+						<div class="about__card" data-aos="fade-up" data-aos-delay="400">
+							<img src="./img/about/2.svg" alt="keybord" class="about__card-img" />
+							<h3 class="about__card-title">Thoughtful Design</h3>
+							<p class="about__card-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et&#160;viverra.
+							</p>
+						</div>
+						<div class="about__card" data-aos="fade-up" data-aos-delay="700">
+							<img src="./img/about/3.svg" alt="" class="about__card-img" />
+							<h3 class="about__card-title">Thoughtful Design</h3>
+							<p class="about__card-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et&#160;viverra.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="pricing">
+				<div class="container">
+					<h1 id="pricing" class="title" data-aos="flip-left">pricing options</h1>
+					<p class="subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</p>
+					<div class="pricing__content grid">
+						<div class="pricing__card">
+							<div class="pricing__card-top">
+								<div class="pricing__card-title">Basic</div>
+								<div class="pricing__card-price">$10</div>
+								<div class="pricing__card-desc">
+									<p>Free for life</p>
+								</div>
+							</div>
+
+							<div class="pricing__card-bottom">
+								<ul class="pricing__card-list flex">
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pricing__card">
+							<div class="pricing__card-top">
+								<div class="pricing__card-title">Optima</div>
+								<div class="pricing__card-price">$20</div>
+								<div class="pricing__card-desc">
+									<p>Free for life</p>
+								</div>
+							</div>
+
+							<div class="pricing__card-bottom">
+								<ul class="pricing__card-list flex">
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pricing__card">
+							<div class="pricing__card-top">
+								<div class="pricing__card-title">Pro</div>
+								<div class="pricing__card-price">$30</div>
+								<div class="pricing__card-desc">
+									<p>Free for life</p>
+								</div>
+							</div>
+
+							<div class="pricing__card-bottom">
+								<ul class="pricing__card-list flex">
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+									<li class="pricing__card-item">
+										<a href="#!" class="pricing__card-link">1 gb&#160;of&#160;space</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="container">
+					<h1 id="reviews" class="title" data-aos="flip-left">
+						what our customers are saying
+					</h1>
+					<p class="subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</p>
+					<div class="reviews__content swiper slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+								<div class="reviews__card ">
+									<div class="reviews__card-top">
+										<p class="reviews__card-text">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto
+											eaque quo suscipit.
+										</p>
+									</div>
+									<div class="reviews__card-bottom user">
+										<div class="user__img">
+											<picture>
+												<source srcset="./img/reviews/1.webp 1x, ./img/reviews/1@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/reviews/1.jpg 1x, ./img/reviews/1@2x.jpg 2x" type="image/jpeg" />
+												<img src="./img/reviews/1.jpg" alt="reviews" />
+											</picture>
+										</div>
+										<div class="user__descr">
+											<h4 class="user__name">Davis Rhiel Madsen</h4>
+											<p class="user__job">Manager</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out">
+								<div class="reviews__card ">
+									<div class="reviews__card-top">
+										<p class="reviews__card-text">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto
+											eaque quo suscipit.
+										</p>
+									</div>
+									<div class="reviews__card-bottom user flex">
+										<div class="user__img">
+											<picture>
+												<source srcset="./img/reviews/2.webp 1x, ./img/reviews/2@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/reviews/2.jpg 1x, ./img/reviews/2@2x.jpg 2x" type="image/jpeg" />
+												<img src="./img/reviews/2.jpg" alt="reviews" />
+											</picture>
+										</div>
+										<div class="user__descr">
+											<h4 class="user__name">Davis Rhiel Madsen</h4>
+											<p class="user__job">Manager</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" data-aos="fade-up" data-aos-delay="800" data-aos-easing="ease-in-out">
+								<div class="reviews__card ">
+									<div class="reviews__card-top">
+										<p class="reviews__card-text">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto
+											eaque quo suscipit.
+										</p>
+									</div>
+									<div class="reviews__card-bottom user flex">
+										<div class="user__img">
+											<picture>
+												<source srcset="./img/reviews/1.webp 1x, ./img/reviews/1@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/reviews/1.jpg 1x, ./img/reviews/1@2x.jpg 2x" type="image/jpeg" />
+												<img src="./img/reviews/1.jpg" alt="reviews" />
+											</picture>
+										</div>
+										<div class="user__descr">
+											<h4 class="user__name">Davis Rhiel Madsen</h4>
+											<p class="user__job">Manager</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="banner">
+				<div class="container">
+					<h1 class="title banner-title" data-aos="flip-left">
+						STYLISH AXURE DESIGN
+					</h1>
+					<p class="subtitle banner-subtitle">
+						Use the sections you need, remove the ones you don&#8217;t. Create gorgeous prototypes faster than ever!
+					</p>
+					<button class="btn m-auto">Download</button>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="container">
+					<h1 id="contact" class="title" data-aos="flip-left">contact us</h1>
+					<p class="subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</p>
+
+					<div class="contact__form grid">
+						<div class="contact__form" data-aos="fade-right">
+							<div class="contact__form-content ">
+								<form action="/" class="form" method="post">
+									<div class="form__group">
+										<input class="input input--name" type="text" placeholder="Name" />
+									</div>
+									<div class="form__group">
+										<input class="input input--email" type="text" placeholder="Email" />
+									</div>
+									<div class="form__group">
+										<input class="input input--password" type="text" placeholder="Password" />
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="contact__textarea" data-aos="fade-left">
+							<textarea class="textarea" name="text" placeholder="Message"></textarea>
+						</div>
+					</div>
+					<button class="btn-box big">Send Message</button>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__social">
+					<ul class="footer__social-list flex">
+						<li class="footer__social-item">
+							<a href="#!" class="footer__social-link">
+								<svg width="54" height="54" viewBox="0 0 54 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M20.3885 47.6584H29.2552V29.9029H37.2441L38.1219 21.0806H29.2552V16.6251C29.2552 16.0372 29.4887 15.4734 29.9044 15.0577C30.3201 14.642 30.884 14.4084 31.4719 14.4084H38.1219V5.54175H31.4719C28.5324 5.54175 25.7133 6.70945 23.6348 8.78798C21.5562 10.8665 20.3885 13.6856 20.3885 16.6251V21.0806H15.9552L15.0774 29.9029H20.3885V47.6584Z"
+									/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#!" class="footer__social-link">
+								<svg width="44" height="37" viewBox="0 0 44 37" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M39.5198 9.72684C39.5486 10.1148 39.5486 10.5005 39.5486 10.8862C39.5486 22.6899 30.5645 36.2914 14.1456 36.2914C9.08718 36.2914 4.38785 34.8262 0.433319 32.2814C1.15152 32.3634 1.84312 32.3923 2.59014 32.3923C6.60894 32.402 10.5139 31.0581 13.6757 28.5774C11.8124 28.5436 10.0062 27.9289 8.50916 26.819C7.01216 25.709 5.89914 24.1593 5.3255 22.3862C5.87745 22.4682 6.43162 22.5237 7.01238 22.5237C7.8126 22.5237 8.61725 22.4128 9.36427 22.22C7.34214 21.8117 5.52384 20.7156 4.21854 19.1182C2.91325 17.5207 2.20154 15.5204 2.20444 13.4575V13.3467C3.39479 14.0094 4.77577 14.424 6.23877 14.4794C5.01315 13.6649 4.00818 12.5598 3.31352 11.2625C2.61886 9.96526 2.25611 8.51622 2.25764 7.04467C2.25764 5.3866 2.69875 3.86597 3.47237 2.5404C5.71594 5.3002 8.51418 7.55796 11.6859 9.16748C14.8575 10.777 18.3319 11.7024 21.884 11.8837C21.7466 11.2187 21.6623 10.5293 21.6623 9.83767C21.6618 8.66497 21.8923 7.50365 22.3408 6.4201C22.7893 5.33656 23.447 4.35203 24.2762 3.5228C25.1054 2.69358 26.09 2.03591 27.1735 1.58741C28.257 1.13891 29.4184 0.908354 30.5911 0.908937C33.1624 0.908937 35.4832 1.98624 37.1147 3.72854C39.1136 3.34199 41.0306 2.61227 42.7805 1.57172C42.1142 3.63503 40.7185 5.38462 38.8548 6.49272C40.6277 6.29051 42.3603 5.82429 43.9953 5.10952C42.7742 6.88972 41.261 8.4508 39.5198 9.72684Z"
+									/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#!" class="footer__social-link">
+								<svg width="54" height="54" viewBox="0 0 54 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M44.3333 6.6499H8.86666C8.27876 6.6499 7.71495 6.88344 7.29924 7.29915C6.88353 7.71485 6.64999 8.27867 6.64999 8.86657V44.3332C6.64999 44.9211 6.88353 45.4849 7.29924 45.9007C7.71495 46.3164 8.27876 46.5499 8.86666 46.5499H44.3333C44.9212 46.5499 45.485 46.3164 45.9007 45.9007C46.3165 45.4849 46.55 44.9211 46.55 44.3332V8.86657C46.55 8.27867 46.3165 7.71485 45.9007 7.29915C45.485 6.88344 44.9212 6.6499 44.3333 6.6499ZM18.4848 40.6469H12.5618V21.6058H18.4848V40.6469ZM15.5233 19.0056C14.6132 19.0056 13.7405 18.6441 13.0969 18.0006C12.4534 17.3571 12.0919 16.4843 12.0919 15.5742C12.0919 14.6641 12.4534 13.7913 13.0969 13.1478C13.7405 12.5043 14.6132 12.1428 15.5233 12.1428C16.4334 12.1428 17.3062 12.5043 17.9497 13.1478C18.5932 13.7913 18.9547 14.6641 18.9547 15.5742C18.9547 16.4843 18.5932 17.3571 17.9497 18.0006C17.3062 18.6441 16.4334 19.0056 15.5233 19.0056ZM40.6492 40.6469H34.7329V31.3879C34.7329 29.1801 34.693 26.3406 31.6562 26.3406C28.575 26.3406 28.1073 28.7479 28.1073 31.2327V40.6491H22.1955V21.608H27.8701V24.2103H27.9522C28.7391 22.7141 30.672 21.1358 33.547 21.1358C39.5409 21.1358 40.647 25.0771 40.647 30.2064V40.6469H40.6492Z"
+									/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#!" class="footer__social-link">
+								<svg width="54" height="54" viewBox="0 0 54 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M20.0387 47.747C22.1667 48.3899 24.3168 48.7667 26.6 48.7667C32.479 48.7667 38.1171 46.4313 42.2742 42.2742C46.4312 38.1172 48.7667 32.479 48.7667 26.6C48.7667 23.689 48.1933 20.8066 47.0793 18.1172C45.9653 15.4278 44.3326 12.9842 42.2742 10.9258C40.2158 8.86745 37.7722 7.23467 35.0828 6.12069C32.3934 5.00671 29.511 4.43335 26.6 4.43335C23.689 4.43335 20.8066 5.00671 18.1172 6.12069C15.4278 7.23467 12.9842 8.86745 10.9258 10.9258C6.76873 15.0829 4.43332 20.7211 4.43332 26.6C4.43332 36.0208 10.3518 44.1117 18.7087 47.3037C18.5092 45.5747 18.3097 42.7152 18.7087 40.7423L21.2578 29.792C21.2578 29.792 20.615 28.5063 20.615 26.467C20.615 23.408 22.5213 21.1248 24.6937 21.1248C26.6 21.1248 27.4867 22.5214 27.4867 24.3169C27.4867 26.2232 26.2232 28.9497 25.5803 31.5653C25.2035 33.7377 26.733 35.644 28.9497 35.644C32.8953 35.644 35.9543 31.4324 35.9543 25.4917C35.9543 20.1717 32.1417 16.5364 26.6665 16.5364C20.4155 16.5364 16.7358 21.1914 16.7358 26.0902C16.7358 27.9965 17.3565 29.925 18.3762 31.1885C18.5757 31.3215 18.5757 31.4988 18.5092 31.8313L17.8663 34.2475C17.8663 34.6243 17.6225 34.7574 17.2457 34.4914C14.4083 33.25 12.768 29.2157 12.768 25.9572C12.768 18.9525 17.7333 12.5907 27.3093 12.5907C34.9347 12.5907 40.8753 18.0659 40.8753 25.3365C40.8753 32.9619 36.1538 39.0798 29.393 39.0798C27.2428 39.0798 25.137 37.9272 24.3833 36.575L22.8982 41.8285C22.3883 43.7349 20.9918 46.284 20.0387 47.8135V47.747Z"
+									/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#!" class="footer__social-link">
+								<svg width="41" height="41" viewBox="0 0 41 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M40.4326 12.4094C40.4103 10.7306 40.096 9.06843 39.5038 7.49731C38.9904 6.17208 38.2061 4.96853 37.2011 3.96357C36.1961 2.9586 34.9926 2.17432 33.6674 1.66083C32.1164 1.07864 30.478 0.763833 28.8217 0.729827C26.6893 0.63451 26.0132 0.60791 20.6001 0.60791C15.187 0.60791 14.4932 0.60791 12.3763 0.729827C10.7208 0.764083 9.08309 1.07888 7.53286 1.66083C6.20743 2.17396 5.00369 2.95812 3.99868 3.96313C2.99367 4.96814 2.20951 6.17187 1.69638 7.49731C1.11302 9.04705 0.798903 10.6851 0.767596 12.3407C0.67228 14.4754 0.643463 15.1515 0.643463 20.5646C0.643463 25.9777 0.643463 26.6693 0.767596 28.7884C0.800846 30.4465 1.1134 32.0824 1.69638 33.6362C2.21038 34.9613 2.99512 36.1645 4.00046 37.1691C5.00581 38.1737 6.20965 38.9575 7.53508 39.4705C9.08106 40.0761 10.719 40.4134 12.3785 40.468C14.5131 40.5633 15.1892 40.5921 20.6023 40.5921C26.0154 40.5921 26.7092 40.5921 28.8262 40.468C30.4824 40.4354 32.1209 40.1213 33.6718 39.5392C34.9967 39.0251 36.1999 38.2407 37.2048 37.2358C38.2097 36.2309 38.9942 35.0276 39.5083 33.7027C40.0913 32.1511 40.4038 30.5152 40.4371 28.8549C40.5324 26.7225 40.5612 26.0464 40.5612 20.6311C40.5568 15.218 40.5568 14.5308 40.4326 12.4094ZM20.5868 30.8011C14.9254 30.8011 10.3392 26.2148 10.3392 20.5535C10.3392 14.8921 14.9254 10.3058 20.5868 10.3058C23.3047 10.3058 25.9112 11.3855 27.833 13.3073C29.7548 15.2291 30.8345 17.8356 30.8345 20.5535C30.8345 23.2713 29.7548 25.8779 27.833 27.7997C25.9112 29.7215 23.3047 30.8011 20.5868 30.8011ZM31.2423 12.3163C30.9284 12.3166 30.6176 12.255 30.3275 12.135C30.0375 12.0151 29.774 11.8391 29.552 11.6171C29.3301 11.3952 29.154 11.1316 29.0341 10.8416C28.9141 10.5515 28.8525 10.2407 28.8528 9.92678C28.8528 9.61312 28.9145 9.30254 29.0346 9.01275C29.1546 8.72297 29.3305 8.45967 29.5523 8.23788C29.7741 8.01609 30.0374 7.84016 30.3272 7.72013C30.617 7.6001 30.9276 7.53832 31.2412 7.53832C31.5549 7.53832 31.8655 7.6001 32.1552 7.72013C32.445 7.84016 32.7083 8.01609 32.9301 8.23788C33.1519 8.45967 33.3278 8.72297 33.4479 9.01275C33.5679 9.30254 33.6297 9.61312 33.6297 9.92678C33.6297 11.2479 32.5612 12.3163 31.2423 12.3163Z"
+									/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#!" class="footer__social-link">
+								<svg width="54" height="54" viewBox="0 0 54 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M26.6573 4.43335C14.4457 4.43335 4.54824 14.3308 4.54824 26.5424C4.54824 36.309 10.8813 44.5971 19.6681 47.5231C20.7742 47.7226 21.1732 47.0421 21.1732 46.4569C21.1732 45.9316 21.1555 44.5395 21.1489 42.6974C14.9976 44.0319 13.6986 39.7315 13.6986 39.7315C12.6967 37.1779 11.2448 36.4974 11.2448 36.4974C9.23871 35.1253 11.3977 35.1563 11.3977 35.1563C13.6188 35.3115 14.7826 37.4351 14.7826 37.4351C16.7554 40.8133 19.9607 39.8379 21.2154 39.2727C21.4171 37.8429 21.9934 36.8676 22.6229 36.3157C17.7152 35.7593 12.5548 33.8618 12.5548 25.3875C12.5548 22.978 13.4171 21.0007 14.8247 19.4579C14.6008 18.8971 13.8361 16.6472 15.0442 13.6059C15.0442 13.6059 16.8995 13.0096 21.1223 15.8691C22.9257 15.3785 24.7861 15.1281 26.6551 15.1243C28.5241 15.1274 30.3845 15.3778 32.1879 15.8691C36.4128 13.0074 38.266 13.6059 38.266 13.6059C39.474 16.6472 38.7159 18.8971 38.4854 19.4579C39.9041 21.0007 40.7553 22.9758 40.7553 25.3875C40.7553 33.884 35.5904 35.7504 30.665 36.2979C31.4519 36.9807 32.1613 38.3284 32.1613 40.3899C32.1613 43.3469 32.1347 45.7321 32.1347 46.4569C32.1347 47.0488 32.5292 47.7359 33.6575 47.5187C42.4399 44.5883 48.7663 36.3068 48.7663 26.5424C48.7663 14.3308 38.8689 4.43335 26.6573 4.43335Z"
+									/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#!" class="footer__social-link">
+								<svg width="54" height="54" viewBox="0 0 54 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13.699 44.3334C16.3678 44.3334 18.5313 42.1699 18.5313 39.501C18.5313 36.8322 16.3678 34.6687 13.699 34.6687C11.0302 34.6687 8.86666 36.8322 8.86666 39.501C8.86666 42.1699 11.0302 44.3334 13.699 44.3334Z"
+									/>
+									<path
+										d="M8.86666 9.84204V16.1152C24.4498 16.1152 37.0848 28.7502 37.0848 44.3334H43.358C43.358 25.2922 27.9078 9.84204 8.86666 9.84204ZM8.86666 22.3884V28.6615C17.5117 28.6615 24.5385 35.6884 24.5385 44.3334H30.8117C30.8117 32.2082 20.9918 22.3884 8.86666 22.3884Z"
+									/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__copyright">
+					<p>&#169; 2024 Axure Themes</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
