@@ -1,0 +1,111 @@
+.btn {
+	padding: 20px 90px;
+	font-family: var(--second-family);
+	font-weight: 600;
+	font-size: 18px;
+	text-transform: capitalize;
+	text-align: center;
+	color: #fff;
+	border: 2px solid #fff;
+	max-width: 270px;
+	transition: all 0.2s ease-in-out;
+
+	@include tablet {
+		max-width: 183px;
+		padding: 12px 47px;
+	}
+
+	@include mobile {
+		width: 100%;
+		max-width: none;
+	}
+}
+
+.btn:hover {
+	color: #ec7979;
+	border-color: #ec7979;
+}
+
+.btn:active {
+	color: #fff;
+	background-color: #ab4949;
+	border-color: #ab4949;
+}
+
+.btn-form {
+	display: block;
+	width: 100%;
+	max-width: 470px;
+	background: #ec7979;
+	border-color: #ec7979;
+	border-radius: 0 0 10px 10px;
+	font-size: 15px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.btn-form:hover {
+	background: #ab4949;
+	color: #fff;
+	border-color: #ab4949;
+}
+
+.btn-form:active {
+	background: #ec7979;
+	color: #fff;
+	border-color: #ab4949;
+	box-shadow: inset 0 0 10px 0 #ab4949;
+}
+
+.btn-box {
+	display: flex;
+	width: 270px;
+	height: 58px;
+	padding: 0;
+	background: #ec7979;
+
+	font-family: var(--second-family);
+	font-weight: 600;
+	font-size: 18px;
+	text-transform: capitalize;
+	color: #fff;
+
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 54px;
+
+	@include mobile {
+		margin-bottom: 30px;
+		max-width: none;
+		width: 100%;
+	}
+}
+
+.btn-box:hover {
+	background: #ab4949;
+	color: #fff;
+	border-color: #ab4949;
+}
+
+.btn-box:active {
+	background: #ec7979;
+	color: #fff;
+	box-shadow: inset 0 0 10px 0 #ab4949;
+	background: #ec7979;
+}
+
+.big {
+	width: 370px;
+	transition: all 0.2s ease-in-out;
+	margin: 0 auto;
+
+	@include tablet {
+		width: 318px;
+	}
+
+	@include mobile {
+		width: 275px;
+	}
+}

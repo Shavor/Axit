@@ -1,0 +1,36 @@
+.banner {
+	background: url('../img/banner/1.jpg') rgba(0, 0, 0, 0.5);
+	background-position: center center;
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	height: 442px;
+	padding-top: 50px;
+
+	@include mobile {
+		height: 485px;
+	}
+}
+
+.banner-title {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.banner-subtitle {
+	color: #fff;
+}
+
+.title.banner-title.title::after {
+	background: #fff;
+}
+
+.m-auto {
+	display: block;
+	margin: 0 auto;
+	max-width: 370px;
+}

@@ -1,0 +1,42 @@
+.contact {
+	margin-bottom: 57px;
+
+	&__form {
+		grid-column: 6 span;
+		width: 100%;
+
+		@include mobile {
+			grid-column: 1 span;
+		}
+	}
+
+	&__textarea {
+		grid-column: 7 / 6 span;
+		padding-bottom: 15px;
+
+		@include mobile {
+			grid-column: 1 span;
+		}
+	}
+
+	&__form-content {
+		width: 100%;
+	}
+}
+
+
+.textarea {
+	width: 100%;
+	height: 167px;
+	border-bottom: 1px solid #BDBDBD;
+
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 14px;
+	color: #bdbdbd;
+}
+
+.textarea:focus {
+	outline: 0;
+	border-bottom: 1px solid #EC7979;
+}

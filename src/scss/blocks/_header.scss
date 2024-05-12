@@ -1,0 +1,45 @@
+.header {
+	background-color: #000;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+
+	&__container {
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		height: 75px;
+
+		@include mobile {
+			height: 56px;
+		}
+	}
+}
+
+.logo {
+	position: absolute;
+	align-items: center;
+	justify-content: space-between;
+
+	@include mobile {
+		position: static;
+		justify-content: center;
+	}
+}
+
+.logo__header {
+	left: -53px;
+
+	@include tablet {
+		left: 0;
+	}
+}
+
+.header__nav {
+	@include tablet {
+		display: none;
+	}
+}

@@ -1,0 +1,104 @@
+.reviews {
+	margin-bottom: 64px;
+	// .reviews__content
+
+	&__content {}
+
+	// .reviews__card
+
+	&__card {
+		grid-column: 4 span;
+
+		@include mobile {
+			grid-column: 1 span;
+		}
+	}
+
+	// .reviews__card-top
+
+	&__card-top {
+		border-radius: 10px;
+		background: #e2e2e2;
+		padding: 38px 10px;
+		margin-bottom: 66px;
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 20px 15px 0 15px;
+			border-color: #e2e2e2 transparent transparent transparent;
+			bottom: -20px;
+			left: 70px;
+		}
+	}
+
+	// .reviews__card-text
+
+	&__card-text {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 18px;
+		text-align: center;
+		color: #86878b;
+	}
+
+	// .reviews__card-bottom
+
+	&__card-bottom {}
+}
+
+.container {}
+
+.title {}
+
+.subtitle {}
+
+.grid {}
+
+.user {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+	// .user__img
+
+	@include mobile {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	&__img {
+		grid-column: 1 span;
+		padding-bottom: 20px;
+	}
+
+	// .user__descr
+
+	&__descr {
+		grid-column: 2/3 span;
+	}
+
+	// .user__name
+
+	&__name {
+		font-family: var(--second-family);
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: capitalize;
+		color: #000;
+
+		padding-bottom: 17px;
+	}
+
+	// .user__job
+
+	&__job {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 18px;
+		color: #000;
+	}
+}

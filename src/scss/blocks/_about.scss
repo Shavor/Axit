@@ -1,0 +1,109 @@
+.about {
+	margin-bottom: 48px;
+
+	&__content {
+		display: flex;
+		gap: 15px;
+
+		@include mobile {
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+	}
+
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__card-img {
+		@include mobile {
+			width: 65px;
+			height: 65px;
+		}
+	}
+
+
+	&__card-title {
+		font-family: var(--second-family);
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: capitalize;
+		text-align: center;
+		color: #000;
+		padding-bottom: 48px;
+
+		@include tablet {
+			font-size: 18px;
+		}
+
+	}
+
+
+	&__card-text {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 18px;
+		text-align: center;
+		color: #000;
+
+		@include tablet {
+			font-size: 14px;
+		}
+	}
+}
+
+.title {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 36px;
+	text-align: center;
+	color: #000;
+	padding: 50px 0 100px 0;
+	position: relative;
+	text-transform: uppercase;
+
+	@include tablet {
+		font-size: 24px;
+	}
+
+	@include mobile {
+		font-size: 18px;
+		padding: 50px 0 90px 0;
+	}
+}
+
+.title::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 170px;
+	height: 1px;
+	background: #EC7979;
+	margin-top: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.subtitle {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	text-align: center;
+	color: #86878b;
+	padding-bottom: 71px;
+
+	@include tablet {
+		font-size: 14px;
+		padding-bottom: 65px;
+	}
+
+	@include mobile {
+		font-size: 13px;
+		padding-bottom: 37px;
+	}
+}
